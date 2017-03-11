@@ -222,6 +222,30 @@ function finishedLoading(bufferList) {
 	 }
 	 */
 
+		//* this doesn't work Lisa
+	(function setInitialVolume() {
+		emcPlayer = document.getElementById('radioPlayer');
+		emcPlayer.volume=0.6;
+	})();
+	
+	
+	(function radioToggle() {
+		
+		$('#radioToggle').on('click', function() {
+			$(this).toggleClass('radioClosed');
+			if ($(this).hasClass('radioClosed')) {
+				$(this).removeClass().addClass('fa fa-music radioClosed');
+			} else {
+				$(this).removeClass('fa-music').addClass('fa fa-times-circle');
+			}
+			$('#radio').toggle();
+		});
+
+	})();
+	
+
+
+
 </script>
 
 	

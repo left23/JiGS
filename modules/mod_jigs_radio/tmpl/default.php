@@ -1,9 +1,10 @@
+<div id="radioToggle" class="fa fa-times-circle"></div>
 <div id="radio">
 
   <!--div class="control play" onclick="VolumeSample.toggle();">
     <span class="left"></span><span class="right"></span>
   </div-->
-  <audio controls src="http://164.138.27.49:8001/mpd"></audio>
+  <audio controls src="http://164.138.27.49:8001/mpd" id="radioPlayer"></audio>
 
   <span class="radio_stats">Now Playing</span>
 

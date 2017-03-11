@@ -8,7 +8,7 @@
   <authorEmail>support@emc23.com</authorEmail>
   <authorUrl>www.emc23.com</authorUrl>
   <version>1.0</version>
-  <description>A module for streming music from different universes</description>
+  <description>A module for streaming music from different universes</description>
   <params>
     <param name="random" type="radio" default="0" label="Randomize" description="Show random items">
       <option value="0">No</option>
@@ -24,6 +24,7 @@
       <option value="#__wub_ennemis">People</option>
       <option value="#__wub_batiments">Buildings</option>
     </param>
+
 
   </params>
 </install>
