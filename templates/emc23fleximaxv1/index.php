@@ -35,9 +35,11 @@ $templateparams	= $app->getTemplate(true)->params;
 
 <?php echo '<?xml version="1.0" encoding="utf-8"?' .'>'; ?>
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <!--audio controls src="http://164.138.27.49:8001/mpd"></audio-->
   <jdoc:include type="head" />
 
   <!-- stops internally-linked content loading in iframes -->
