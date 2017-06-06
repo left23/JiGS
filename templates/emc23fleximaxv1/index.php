@@ -39,7 +39,6 @@ $templateparams	= $app->getTemplate(true)->params;
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <!--audio controls src="http://164.138.27.49:8001/mpd"></audio-->
   <jdoc:include type="head" />
 
   <!-- stops internally-linked content loading in iframes -->
@@ -128,6 +127,7 @@ $templateparams	= $app->getTemplate(true)->params;
     // Add different events for fullscreen
   </script>
 
+  <audio controls src="http://164.138.27.49:8001/mpd" id="radioPlayer"></audio>
 
 </head>
 
@@ -505,6 +505,7 @@ $templateparams	= $app->getTemplate(true)->params;
 
 
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/emctempus.js"></script>
+<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/ga.js"></script>
 
 <script type="text/javascript">
   jQuery(document).ready(function() {

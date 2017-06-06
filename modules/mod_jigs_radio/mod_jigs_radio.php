@@ -222,7 +222,7 @@ function finishedLoading(bufferList) {
 	 }
 	 */
 
-		//* this doesn't work Lisa
+		//* set initial volume
 	(function setInitialVolume() {
 		emcPlayer = document.getElementById('radioPlayer');
 		emcPlayer.volume=0.6;
@@ -241,9 +241,10 @@ function finishedLoading(bufferList) {
 			$('#radio').toggle();
 		});
 
-	})();
-	
+	});
 
+  var audio = document.getElementById("radioPlayer");
+  audio.volume = 0.6;
 
 
 </script>
